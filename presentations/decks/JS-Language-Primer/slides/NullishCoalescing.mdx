@@ -1,0 +1,52 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer"
+
+<CodeSurfer>
+
+```tsx showNumbers title="Nullish coalescing operator" subtitle="Similar but safer as || operator"
+const _this = undefined
+const _that = 'that'
+
+// works but dangerous! -> falsy values can introduce errors
+const thisOrThatWithOr = _this || _that
+```
+
+```diff 5[24:38] title="Nullish coalescing operator" subtitle="Similar but safer as || operator"
+```
+
+```tsx showNumbers title="Nullish coalescing operator" subtitle="Similar but safer as || operator"
+const _this = undefined
+const _that = 'that'
+
+// works but dangerous! -> falsy values can introduce errors
+const thisOrThatWithOr = _this || _that
+
+// safer with ternary operator
+const thisOrThatWithTernary = _this !== null ? _this : _that
+```
+
+```diff 8[31:60] title="Nullish coalescing operator" subtitle="Similar but safer as || operator"
+```
+
+```tsx showNumbers title="Nullish coalescing operator" subtitle="Similar but safer as || operator"
+const _this = undefined
+const _that = 'that'
+
+// works but dangerous! -> falsy values can introduce errors
+const thisOrThatWithOr = _this || _that
+
+// safer with ternary operator
+const thisOrThatWithTernary = _this !== null ? _this : _that
+
+// nullish coalescing -> explicitely checks if this is null
+// -> remember: undefined == null is "true" but falsyValue == null is "false"
+const thisOrThatWithNC = _this ?? _that
+```
+
+```diff 12[26:39] title="Nullish coalescing operator" subtitle="Similar but safer as || operator"
+```
+
+</CodeSurfer>

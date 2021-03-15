@@ -1,0 +1,37 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer"
+
+import "prismjs/components/prism-tsx"
+
+<CodeSurfer>
+
+```tsx showNumbers title="Immutable Example"
+const compareSortedAndUnsortedCorrectly = (numbers) => {
+  const numbersCopy = [ ...numbers ]
+  const sortedNumbers = numbersCopy.sort()
+
+  // Compare first element
+  return numbers[0] === sortedNumbers[0]
+} // => returns false, because we created a new array first
+```
+
+```diff 2
+```
+
+```diff 3
+```
+
+```diff 6,7
+```
+
+</CodeSurfer>
+
+
+<Notes>
+
+Show browser example!
+
+</Notes>

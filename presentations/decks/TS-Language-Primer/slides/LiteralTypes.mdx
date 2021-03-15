@@ -1,0 +1,23 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer"
+
+<CodeSurfer>
+
+```ts title="Literal Types" subtitle="TypeScript tries to narrow down types"
+const thisIsLiterally1 = 1 // type: 1
+const thisIsAlwaysTrue = true // type: true
+
+const thisNeverChanges = 'Hey, Buddy!' // type: 'Hey, Buddy!'
+let thisCouldBeAnyString = 'Hey, Buddy!' // type: string
+```
+
+```ts title="Union of Literals" subtitle="Some prefer this to Enums"
+type Easing = 'ease-in' | 'ease-out' | 'ease-in-out'
+
+type DiceValue = 1 | 2 | 3 | 4 | 5 | 6
+```
+
+</CodeSurfer>

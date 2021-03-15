@@ -1,0 +1,30 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer"
+
+<CodeSurfer>
+
+```ts title="Enforce Immutability with TS"
+type A = ReadonlyArray<number>
+
+const a: A = [1, 1, 2, 3, 5]
+a.push(7) // error
+a.sort() // error
+a.map(x => x * 2) // ok
+
+type B = Readonly<Record<string, number>>
+
+const b: B = {
+    neverChange: 42,
+}
+
+b = {
+  cantTouchThis: 42,
+}
+b.neverChange = 23 // error
+b['new'] = 23 // error
+```
+
+</CodeSurfer>

@@ -1,0 +1,81 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer"
+
+<CodeSurfer>
+
+```ts title="Functions"
+// implicit any
+const add = (x, y) => x + y // signature: (x: any, y: any) => any
+```
+
+```diff 2[43:65] title="Functions"
+```
+
+```ts title="Functions"
+// implicit any
+const add = (x, y) => x + y // signature: (x: any, y: any) => any
+
+// declared parameters, inferred return type
+const add = (x: number, y: number) => x + y
+```
+
+```diff 5[13:34] title="Functions"
+```
+
+```ts title="Functions"
+// implicit any
+const add = (x, y) => x + y // signature: (x: any, y: any) => any
+
+// declared parameters, inferred return type
+const add = (x: number, y: number) => x + y
+
+// declared return type
+const add = (x: number, y: number): number => x + y
+```
+
+```diff 8[13:42] title="Functions"
+```
+
+```ts title="Functions"
+// implicit any
+const add = (x, y) => x + y // signature: (x: any, y: any) => any
+
+// declared parameters, inferred return type
+const add = (x: number, y: number) => x + y
+
+// declared return type
+const add = (x: number, y: number): number => x + y
+
+// complete function signature as type
+const add: (value1: number, value2: number) => number = (x, y) => x + y
+```
+
+```diff 11[10:53] title="Functions"
+```
+
+```ts title="Functions"
+// implicit any
+const add = (x, y) => x + y // signature: (x: any, y: any) => any
+
+// declared parameters, inferred return type
+const add = (x: number, y: number) => x + y
+
+// declared return type
+const add = (x: number, y: number): number => x + y
+
+// complete function signature as type
+const add: (value1: number, value2: number) => number = (x, y) => x + y
+
+// with function keyword
+function add(x: number, y: number): number {
+  return x + y
+}
+```
+
+```diff 14[13:42] title="Functions"
+```
+
+</CodeSurfer>

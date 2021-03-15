@@ -1,0 +1,44 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer"
+
+<CodeSurfer>
+
+```ts title="Generic Constraints"
+function loggingIdentity<T>(arg: T): T {
+  console.log(arg.length) // Error: Property 'length' does not exist on type 'T'.
+  return arg
+}
+```
+
+```diff 2 title="Generic Constraints"
+```
+
+```ts title="Generic Constraints"
+function loggingIdentity<T>(arg: T): T {
+  console.log(arg.length) // Error: Property 'length' does not exist on type 'T'.
+  return arg
+}
+
+interface Lengthwise {
+  length: number
+}
+
+function loggingIdentity<T extends Lengthwise>(arg: T): T {
+  console.log(arg.length) // Now TS knows it has a .length property, so no more error
+  return arg
+}
+```
+
+```diff 10[25:57] title="Generic Constraints"
+```
+
+```diff 11 title="Generic Constraints"
+```
+
+```diff title="Generic Constraints" subtitle="Questions?"
+```
+
+</CodeSurfer>

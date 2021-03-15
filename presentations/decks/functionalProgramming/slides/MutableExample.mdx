@@ -1,0 +1,26 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer"
+
+import "prismjs/components/prism-tsx"
+
+<CodeSurfer>
+
+```tsx showNumbers title="Mutable Example"
+const compareSortedAndUnsorted = (numbers) => {
+  const sortedNumbers = numbers.sort()
+
+  // Compare first element
+  return numbers[0] === sortedNumbers[0]
+} // => returns true, because both arrays refer to the same mutated reference
+```
+
+```diff 2
+```
+
+```diff 5,6
+```
+
+</CodeSurfer>

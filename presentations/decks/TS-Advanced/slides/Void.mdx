@@ -1,0 +1,29 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer"
+
+<CodeSurfer>
+
+```ts title="Void"
+const hmmm: void = undefined // not very useful as data type
+
+// use as return type if function does not return anything (implicitly returns undefined)
+const doSideEffect = (anything: string): void => {
+  console.log(anything)
+
+  // no return statement
+}
+```
+
+```diff 1[11:16] title="Void"
+```
+
+```diff 3:8 title="Void"
+```
+
+```diff title="Void" subtitle="Questions?"
+```
+
+</CodeSurfer>

@@ -1,0 +1,65 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer"
+
+<CodeSurfer>
+
+```ts showNumbers title="Composition"
+type UserId = number
+
+type Address = {
+  city: string
+  street: string
+  houseNumber: number
+}
+
+type User = {
+  id: UserId
+  name: string
+  address?: Address
+}
+
+type Users = Array<User>
+
+const renderUsers = (users: Users): Array<string> => {
+  return users.map(user => `User ${user.id} is named "${user.name}"`)
+}
+
+const users: Users = [
+  {
+    id: 1,
+    name: 'Finn'
+  },
+  {
+    id: 2,
+    name: 'Jake'
+  },
+  {
+    id: 3,
+    name: 'Marceline'
+  },
+]
+console.log(renderUsers(users))
+```
+
+```diff 1:15 title="Composition"
+```
+
+```diff 17:19 title="Composition"
+```
+
+```diff 21:34 title="Composition"
+```
+
+```diff 35 title="Composition"
+```
+
+```diff title="Composition" subtitle="Questions?"
+```
+
+```diff title="Composition" subtitle="Now refactor UserId to be a string"
+```
+
+</CodeSurfer>

@@ -1,0 +1,52 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer"
+
+<CodeSurfer>
+
+```tsx showNumbers title="Concatenation with Template literals"
+const name = 'Marceline'
+
+// concatenation with '+' operator
+const strPlus = "Hi, I'm " + name + "!"
+```
+
+```tsx title="Concatenation with Template literals"
+const name = 'Marceline'
+
+// concatenation with '+' operator
+const strPlus = "Hi, I'm " + name + "!"
+
+// with String.concat()
+const strConcat = "".concat("Hi, I'm ", name, "!")
+```
+
+```tsx title="Concatenation with Template literals"
+const name = 'Marceline'
+
+// concatenation with '+' operator
+const strPlus = "Hi, I'm " + name + "!"
+
+// with String.concat()
+const strConcat = "".concat("Hi, I'm ", name, "!")
+
+// with template literal
+const strTemplate = `Hi, I'm ${name}!`
+```
+
+```tsx 10[21,38] title="Concatenation with Template literals"
+const name = 'Marceline'
+
+// concatenation with '+' operator
+const strPlus = "Hi, I'm " + name + "!"
+
+// with String.concat()
+const strConcat = "".concat("Hi, I'm ", name, "!")
+
+// with template literal
+const strTemplate = `Hi, I'm ${name}!`
+```
+
+</CodeSurfer>

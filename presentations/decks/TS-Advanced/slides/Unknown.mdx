@@ -1,0 +1,39 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer"
+
+<CodeSurfer>
+
+```ts showNumbers title="Unknown" subtitle="unknown parameter can't be used until we know what type it has"
+const ama = (me: unknown): string => {
+  if (typeof me === 'number') {
+    return 'IAMA number, ask me anything!'
+  }
+
+  if (typeof me === 'string') {
+    return `IAMA ${me.length} characters long string, ask me anything!`
+  }
+
+  return 'I don\'t really know, don\'t ask'
+}
+
+console.log(ama(23))
+console.log(ama('cool'))
+console.log(ama(true))
+```
+
+```diff 1[14:24] title="Unknown"
+```
+
+```diff 2[7:28],6[7:28] title="Unknown" subtitle="narrow down type with type guards"
+```
+
+```diff 13:15 title="Unknown"
+```
+
+```diff title="Unknown" subtitle="Questions?"
+```
+
+</CodeSurfer>

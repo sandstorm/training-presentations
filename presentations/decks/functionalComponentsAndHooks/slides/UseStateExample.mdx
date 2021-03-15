@@ -1,0 +1,52 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer"
+
+<CodeSurfer>
+
+```tsx showNumbers title="useState() - Example"
+import React, { useState } from 'react'
+
+const Accordion = (props) => {
+    const [isExpanded, setExpanded] = useState(false)
+
+    return (
+        <div className='accordion'>
+            <button
+              className='accordion__title'
+              onClick={() => setExpanded(!isExpanded)}
+            >
+                Some title
+            </button>
+
+            { isExpanded && (
+                    <div className='accordion__content'>
+                        Some content
+                    </div>
+                )
+            }
+        </div>
+    )
+}
+
+export default React.memo(Accordion)
+```
+
+```diff 1:23
+```
+
+```diff 1
+```
+
+```diff 4
+```
+
+```diff 8:11
+```
+
+```diff 15:20
+```
+
+</CodeSurfer>

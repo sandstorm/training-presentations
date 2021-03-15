@@ -1,0 +1,69 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer"
+
+import "prismjs/components/prism-tsx"
+
+<CodeSurfer>
+
+```tsx title="Is this function pure?" showNumbers
+const getUser = () => {
+    return database.query("user")
+}
+
+const getUser2 = database => {
+  return database.query("user")
+}
+
+const add2 = (x) => {
+  return x + 2
+}
+
+const add = (x, y) => {
+  console.log(x, y)
+  return x + y
+}
+
+const greetingPhrase = "Hi"
+const greet = (name) => {
+  return `${greetingPhrase}, ${name}!`
+}
+
+const greet2 = (name, greetingPhrase) => {
+  return `${greetingPhrase}, ${name}!`
+}
+```
+
+```diff 1:3
+```
+
+```diff 2
+```
+
+```diff 5:7
+```
+
+```diff 6
+```
+
+```diff 9:11
+```
+
+```diff 13:16
+```
+
+```diff 14
+```
+
+```diff 18:21
+```
+
+```diff 18
+```
+
+```diff 23:25
+```
+
+</CodeSurfer>

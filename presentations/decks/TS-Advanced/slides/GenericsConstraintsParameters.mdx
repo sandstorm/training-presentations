@@ -1,0 +1,31 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer"
+
+<CodeSurfer>
+
+```ts title="Type Parameters in Generic Constraints"
+type User = {
+  id: string
+  name: string
+  age: number
+}
+
+function omit <T, K extends keyof T>(entity: T, propertyToOmit: K) {
+  const {[propertyToOmit]: omitted, ...rest} = entity
+
+  return rest
+}
+
+const user: User = {
+    id: 'uuid',
+    name: 'RainbowDash',
+    age: 23,
+}
+
+const userWithoutName = omit(user, 'name')
+```
+
+</CodeSurfer>

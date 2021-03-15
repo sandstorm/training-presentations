@@ -1,0 +1,35 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer"
+
+<CodeSurfer>
+
+```tsx title="Interface vs Type Alias Example"
+enum DraggingStatus { Untouched, Dragging, Dropped }
+
+type Draggable = {
+    draggingStatus: DraggingStatus
+}
+
+type Box = Draggable & {
+  size: number,
+}
+
+const box: Box = {
+  draggingStatus: DraggingStatus.Untouched,
+  size: 23,
+}
+
+const drag = (draggable: Draggable) => ({
+  ...draggable,
+  draggingStatus: DraggingStatus.Dragging,
+})
+
+const draggedBox = drag(box)
+
+console.log(draggedBox.draggingStatus)
+```
+
+</CodeSurfer>

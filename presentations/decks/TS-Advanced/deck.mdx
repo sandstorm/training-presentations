@@ -1,0 +1,28 @@
+
+
+import "prismjs/components/prism-tsx"
+
+import { github } from '@code-surfer/themes'
+
+export const theme = {
+  ...github,
+  styles: {
+    ...github.styles,
+    ul: {
+      lineHeight: '1.3em',
+    },
+    blockquote: {
+      fontWeight: '400',
+      backgroundColor: '#03a9f42e',
+      borderRadius: '8px',
+      padding: '0.5em',
+      margin: '0.5em',
+      textAlign: 'justify',
+    },
+    p: {
+      margin: '0',
+    },
+  },
+}
+
+// TODO: import slides and put them in order

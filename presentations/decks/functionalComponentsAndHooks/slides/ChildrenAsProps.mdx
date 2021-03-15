@@ -1,0 +1,69 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer"
+
+<CodeSurfer>
+
+```tsx showNumbers title="Children as Props" subtitle="Allows us to create components which contain other components"
+// Without children
+const ComponentWithoutChildren = () => {
+  return (
+    <h1>My title</h1>
+  )
+}
+
+// Usage
+const App = () => {
+  return (
+    <ComponentWithoutChildren />
+  )
+}
+
+
+// With children
+type Props = {}
+const ComponentWithChildren: FC<Props> = (props) => {
+  return (
+    <div>
+      {props.children}
+    </div>
+  )
+}
+
+// Usage
+const App = () => {
+  return (
+    <ComponentWithChildren>
+      <p>Some text</p>
+    </ComponentWithChildren>
+  )
+}
+```
+
+```diff 1:6
+```
+
+```diff 8:13
+```
+
+```diff 16:24
+```
+
+```diff 18
+```
+
+```diff 18[30:38]
+```
+
+```diff 21
+```
+
+```diff 26:33
+```
+
+```diff 29:31
+```
+
+</CodeSurfer>

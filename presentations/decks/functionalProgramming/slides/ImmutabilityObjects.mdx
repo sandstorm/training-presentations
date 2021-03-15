@@ -1,0 +1,49 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer"
+
+import "prismjs/components/prism-tsx"
+
+<CodeSurfer>
+
+```tsx showNumbers title="Objects"
+const person = {
+    name: 'Dude Dudeson',
+    age: 20
+}
+
+// Mutably change property (or even add property)
+person.name = 'Matthilda Musterfrau'
+
+// Immutably change property (or even add property)
+
+const matthilda = {
+    ...person,
+    name: 'Matthilda Musterfrau'
+} // => will also have her age set to 20
+
+// Mutably remove value from object
+delete person.name
+
+// Immutably remove value from object
+const {name, ...newObject} = person // => newObject omits the name property
+```
+
+```diff 1:4
+```
+
+```diff 6:7
+```
+
+```diff 9:14
+```
+
+```diff 16:17
+```
+
+```diff 19:20
+```
+
+</CodeSurfer>

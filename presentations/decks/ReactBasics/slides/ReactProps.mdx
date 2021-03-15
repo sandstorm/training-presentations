@@ -1,0 +1,55 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer"
+
+## React props
+
+> Making components dynamic
+
+<CodeSurfer>
+
+```tsx
+import React from 'react'
+
+type ArticleProps = {
+    title: string
+    text: string
+}
+
+const Article = (props: ArticleProps) => (
+    <article className="article">
+        <h2 className="title">{props.title}</h2>
+        <p className="text">{props.text}</p>
+    </article>
+)
+
+export default Article
+
+
+// Usage inside another component
+import React from 'react'
+
+import Article from './Article.tsx'
+
+const MyComponent = () => (
+    <div>
+        <Article title="Hello world" text="What time is it?" />
+    </div>
+)
+```
+
+```diff 3:6
+```
+
+```diff 8:13
+```
+
+```diff 18:27
+```
+
+```diff 25:25
+```
+
+</CodeSurfer>

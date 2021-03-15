@@ -1,0 +1,79 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer"
+
+<CodeSurfer>
+
+```ts title="Tuple"
+const vector2d: [number, number] = [2, 2]
+const mapping: [number, string] = [2, 'two']
+```
+
+```diff 1[15:32],2[14:31] title="Tuple"
+```
+
+```ts title="Tuple" subtitle="Variable length tuple"
+const vector2d: [number, number] = [2, 2]
+const mapping: [number, string] = [2, 'two']
+
+const something: [string, boolean, ...number[]] = ['str', true, 1, 2, 3]
+```
+
+```diff 4[16:47] title="Tuple" subtitle="Variable length tuple (variadic part at the end)"
+```
+
+```ts title="Tuple" subtitle="Variable length tuple"
+const vector2d: [number, number] = [2, 2]
+const mapping: [number, string] = [2, 'two']
+
+const something: [string, boolean, ...number[]] = ['str', true, 1, 2, 3]
+const first = something[0] // type: string
+const second = something[1] // type: boolean
+const third = something[2] // type: number
+const fourth = something[3] // type: number
+```
+
+```ts title="Tuple" subtitle="Variable length tuple (variadic part anywhere)"
+const vector2d: [number, number] = [2, 2]
+const mapping: [number, string] = [2, 'two']
+
+const something: [string, boolean, ...number[]] = ['str', true, 1, 2, 3]
+const first = something[0] // type: string
+const second = something[1] // type: boolean
+const third = something[2] // type: number
+const fourth = something[3] // type: number
+
+// comming soon
+const doesWork: [string, ...Array<number>, boolean] = ['cool', 1, 2,  3,  true]
+```
+
+```diff 11[15:51] title="Tuple" subtitle="Variable length tuple (variadic part anywhere)"
+```
+
+```ts title="Tuple" subtitle="Variable length tuple (variadic part anywhere)"
+const vector2d: [number, number] = [2, 2]
+const mapping: [number, string] = [2, 'two']
+
+const something: [string, boolean, ...number[]] = ['str', true, 1, 2, 3]
+const first = something[0] // type: string
+const second = something[1] // type: boolean
+const third = something[2] // type: number
+const fourth = something[3] // type: number
+
+// comming soon
+const doesWork: [string, ...Array<number>, boolean] = ['cool', 1, 2,  3,  true]
+
+const a = doesWork[0] // type: string
+const b = doesWork[1] // type: number | boolean
+const c = doesWork[1] // type: number | boolean
+```
+
+</CodeSurfer>
+
+<Notes>
+  * array with a fixed* number of elements
+  * whose types are known
+  * but need not be the same
+</Notes>

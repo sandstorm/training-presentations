@@ -1,0 +1,52 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer"
+
+<CodeSurfer>
+
+```tsx showNumbers title="Array-Spread"
+const list = [1, 2, 3, 4]
+const listCopy = [...list] // creates a shallow copy of list
+
+console.log(list) // [1, 2, 3, 4]
+console.log(listCopy) // [1, 2, 3, 4]
+
+console.log(list === listCopy)
+
+// order matters - array is filled in order
+console.log([...list, 5]) // [1, 2, 3, 4, 5]
+console.log([0, ...list, 5]) // [0, 1, 2, 3, 4, 5]
+```
+
+```diff 1,2 showNumbers title="Array-Spread"
+
+```
+
+```diff 4,5 showNumbers title="Array-Spread"
+
+```
+
+```diff 7 showNumbers title="Array-Spread"
+
+```
+```tsx showNumbers title="Array-Spread"
+const list = [1, 2, 3, 4]
+const listCopy = [...list] // creates a shallow copy of list
+
+console.log(list) // [1, 2, 3, 4]
+console.log(listCopy) // [1, 2, 3, 4]
+
+console.log(list === listCopy) // => false
+
+// order matters - array is filled in order
+console.log([...list, 5]) // [1, 2, 3, 4, 5]
+console.log([0, ...list, 5]) // [0, 1, 2, 3, 4, 5]
+```
+
+```diff 9:11 showNumbers title="Array-Spread"
+
+```
+
+</CodeSurfer>

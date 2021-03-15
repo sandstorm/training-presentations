@@ -1,0 +1,74 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer"
+
+<CodeSurfer>
+
+```tsx showNumbers title="Custom Hooks"
+// .../.../useCounter.js
+import { useState } from 'react'
+
+export const useCounter = (initialValue) => {
+    const [counter, setCounter] = useState(initialValue)
+
+    const increase = () => setCounter(counter + 1)
+    const decrease = () => setCounter(counter - 1)
+
+    return {
+        counter,
+        increase,
+        decrease
+    }
+}
+
+
+// .../.../Counter.jsx
+import React from 'react'
+import { useCounter } from './useCounter'
+
+const Counter = (props) => {
+    const { counter, increase, decrease } = useCounter(0)
+
+    return (
+        <div>
+            <h1>Counter: {counter}</h1>
+
+            <button onClick={increase}>Increase</button>
+            <button onClick={decrease}>Decrease</button>
+        </div>
+    )
+}
+
+export default React.memo(Counter)
+```
+
+```diff 2
+```
+
+```diff 5
+```
+
+```diff 7:8
+```
+
+```diff 10:14
+```
+
+```diff 19:33
+```
+
+```diff 20
+```
+
+```diff 23
+```
+
+```diff 27
+```
+
+```diff 29:30
+```
+
+</CodeSurfer>

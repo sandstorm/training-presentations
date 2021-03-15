@@ -1,0 +1,53 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer"
+
+<CodeSurfer>
+
+```ts title="Enum" subtitle="think: type and value at the same time"
+enum Color {
+  Red,
+  Green,
+  Blue,
+}
+
+const c: Color = Color.Green
+```
+
+```diff 7[8:14] title="Enum" subtitle="type"
+```
+
+```diff 7[16:28] title="Enum" subtitle="value"
+```
+
+```ts title="Enum" subtitle="Quiz"
+enum Color {
+  Red,
+  Green,
+  Blue,
+}
+
+const c: Color = Color.Green
+
+console.log(c === Color.Blue)
+console.log(c, Color.Green)
+console.log(Color[c], Color[Color.Green])
+```
+
+```ts title="Enum" subtitle="Quiz"
+enum Color {
+  Red,
+  Green,
+  Blue,
+}
+
+const c: Color = Color.Green
+
+console.log(c === Color.Blue) // false
+console.log(c, Color.Green) // 1 1
+console.log(Color[c], Color[Color.Green]) // Green Green
+```
+
+</CodeSurfer>

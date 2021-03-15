@@ -1,0 +1,51 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer"
+
+<CodeSurfer>
+
+```tsx title="Interfaces"
+enum DraggingStatus { Untouched, Dragging, Dropped }
+
+interface Draggable {
+    draggingStatus: DraggingStatus
+    onDrag: () => void
+    onDrop?: (e: DragEvent) => void
+}
+
+class Box implements Draggable {
+  draggingStatus: DraggingStatus
+
+  constructor() {
+      this.draggingStatus = DraggingStatus.Untouched
+  }
+
+  onDrag = () => {
+      this.draggingStatus = DraggingStatus.Dragging
+  }
+}
+
+const box = new Box()
+
+box.onDrag()
+console.log(box.draggingStatus)
+```
+
+```diff 1
+```
+
+```diff 3:7
+```
+
+```diff 9:14
+```
+
+</CodeSurfer>
+
+<Notes>
+
+Used to form contracts and describe behaviour in OOP style TS
+
+</Notes>

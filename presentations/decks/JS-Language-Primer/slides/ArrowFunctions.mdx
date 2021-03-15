@@ -1,0 +1,64 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer"
+
+<CodeSurfer>
+
+```tsx showNumbers title="Arrow Functions"
+// basic function declaration
+function double(x) {
+  return 2 * x
+}
+```
+
+```tsx title="Arrow Functions"
+// basic function declaration
+function double(x) {
+  return 2 * x
+}
+
+// equivalent arrow function
+const double = (x) => {
+  return 2 * x
+}
+```
+
+```tsx title="Arrow Functions"
+// even shorter
+// -> single argument needs
+//    no parantheses
+// -> expressions can be
+//    returned implicitly
+//    (without func body and "return")
+const double = x => 2 * x
+```
+
+```tsx title="Arrow Functions"
+// often used as lambdas inside higher order functions
+const odd = [1, 2, 3, 4].filter(x => x % 2)
+const sum = [1, 2, 3, 4].reduce(
+  (acc, currentValue) => acc + currentValue, 0
+)
+```
+
+```tsx 2[33:42],4 title="Arrow Functions"
+// often used as lambdas inside higher order functions
+const odd = [1, 2, 3, 4].filter(x => x % 2)
+const sum = [1, 2, 3, 4].reduce(
+  (acc, currentValue) => acc + currentValue, 0
+)
+```
+
+```tsx title="Arrow Functions"
+// returning object literals needs parentheses in "body-less" arrow functions
+const getXObj = x => ({x}) // returns a new object with  'x' set to x
+```
+
+```tsx 2[16:27] title="Arrow Functions"
+// returning object literals needs parentheses in "body-less" arrow functions
+const getXObj = x => ({x}) // returns a new object with  'x' set to x
+```
+
+</CodeSurfer>

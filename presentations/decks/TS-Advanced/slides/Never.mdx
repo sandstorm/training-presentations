@@ -1,0 +1,54 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer"
+
+<CodeSurfer>
+
+```ts showNumbers title="Never" subtitle="Something that should never be"
+type WhoAmI = 1 & 2 // type: never
+
+function error(message: string): never {
+  throw new Error(message)
+}
+
+const expectoNumbero = (value: unknown): number | never => {
+    if (typeof value === 'number') {
+        return value
+    }
+
+    throw new Error(`Number expected for ${value}, got: ${typeof value}`)
+}
+
+const value1: unknown = 23
+const value2: unknown = '42'
+expectoNumero(value1)
+expectoNumero(value2)
+```
+
+```diff 3:5 title="Never" subtitle="function that never returns"
+```
+
+```diff 3[32:38] title="Never"
+```
+
+```diff 7:13 title="Never" subtitle="another example"
+```
+
+```diff 7[24:55] title="Never"
+```
+
+```diff 8:10 title="Never"
+```
+
+```diff 12 title="Never"
+```
+
+```diff 15:18 title="Never"
+```
+
+```diff title="Never" subtitle="Questions?"
+```
+
+</CodeSurfer>

@@ -1,0 +1,42 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer"
+
+<CodeSurfer>
+
+```tsx title="PropTypes" subtitle="Library to enable runtime type checking for props"
+import React from 'react'
+import PropTypes from 'prop-types'
+
+type ArticleProps = {
+    title: string
+    text: string
+}
+
+const Article = (props: ArticleProps) => (
+    <article className="article">
+        <h2 className="title">{props.title}</h2>
+        <p className="text">{props.text}</p>
+    </article>
+)
+
+Article.PropTypes = {
+    title: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired
+}
+
+export default Article
+```
+
+```diff 16:19
+```
+
+</CodeSurfer>
+
+<Notes>
+
+* You could also type with **React.FC**, however there are currently a few Gotchas you have to be awaware of and the behavior is slightly different: https://github.com/typescript-cheatsheets/react#function-components
+
+</Notes>

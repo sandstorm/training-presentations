@@ -1,0 +1,38 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer"
+
+<CodeSurfer>
+
+```tsx showNumbers title="Rest Parameters Example"
+function sumUp(first, ...rest) {
+  return rest.reduce((acc, currentValue) => acc + currentValue, first)
+}
+
+console.log(sumUp(1)) // => 1
+console.log(sumUp(1, 2, 3, 4)) // => 10
+```
+
+```diff 1[23:30] title="Rest Parameters Example"
+
+```
+
+```diff 2[10:20] title="Rest Parameters Example"
+
+```
+
+```diff 2[65:69] title="Rest Parameters Example"
+
+```
+
+```diff 2[22:62] title="Rest Parameters Example"
+
+```
+
+```diff 5,6 title="Rest Parameters Example"
+
+```
+
+</CodeSurfer>

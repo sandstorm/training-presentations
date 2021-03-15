@@ -1,0 +1,45 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer"
+
+<CodeSurfer>
+
+```ts showNumbers title="Intersection Types" subtitle="Think: \"it's both\""
+type FlyingAnimal = {
+  fly: () => void
+  flyingSpeedKmPerSec: number
+}
+
+type RunningAnimal = {
+  run: () => void
+  legCount: number
+}
+
+type Hippogriff = FlyingAnimal & RunningAnimal
+
+const witherwings: Hippogriff = {
+  fly: () => { console.log('shwooosh') },
+  flyingSpeedKmPerSec: 9001,
+  run: () => { console.log(`I'd rather fly!`)},
+  legCount: 4,
+}
+```
+
+```diff 1:9 title="Intersection Types"
+```
+
+```diff 11 title="Intersection Types"
+```
+
+```diff 11[18:46] title="Intersection Types" subtitle="Hippogriff is both FlyingAnimal and RunningAnimal"
+```
+
+```diff 13:18 title="Intersection Types"
+```
+
+```diff title="Intersection Types" subtitle="Questions?"
+```
+
+</CodeSurfer>

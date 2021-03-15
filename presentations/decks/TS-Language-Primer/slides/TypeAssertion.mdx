@@ -1,0 +1,22 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer"
+
+<CodeSurfer>
+
+```ts title="Type Assertions" subtitle="Only do this if you are absolutely sure - it's safer to use type guards"
+let someValue: unknown = 'this is a string'
+
+console.log((someValue as string).length)
+console.log((someValue as number).toFixed(2)) // no compile time error, BUT runtime error
+```
+
+```diff 3[13:33],4[13:33] title="Type Assertions"
+```
+
+```diff title="Type Assertions" subtitle="Questions?"
+```
+
+</CodeSurfer>
