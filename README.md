@@ -1,3 +1,6 @@
+> **Internal-Note**: Browser examples, exercises etc. can be found inside the `trainings/react` repo in our internal Gitlab!
+
+
 ## Table of contents
 
 <!-- vim-markdown-toc GFM -->
@@ -10,6 +13,7 @@
   - [`WebpackError: ReferenceError: Prism is not defined`](#webpackerror-referenceerror-prism-is-not-defined)
 
 <!-- vim-markdown-toc -->
+
 
 ## Run + develop presentations
 
