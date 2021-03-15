@@ -1,4 +1,4 @@
-> **Internal-Note**: Browser examples, exercises etc. can be found inside the `trainings/react` repo in our internal Gitlab!
+> **Internal-Note**: Browser examples, exercises etc. can be found inside the `trainings` repo in our internal Gitlab!
 
 
 ## Table of contents
