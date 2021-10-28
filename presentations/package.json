@@ -9,6 +9,7 @@
     "deck:react-basics": "mdx-deck decks/ReactBasics/deck.mdx",
     "deck:fcsAndHooks": "mdx-deck decks/functionalComponentsAndHooks/deck.mdx",
     "deck:routing": "mdx-deck decks/routing/deck.mdx",
+    "deck:redux-toolkit": "mdx-deck decks/redux-toolkit/deck.mdx",
     "build": "echo \"TODO: create build with all decks\""
   },
   "devDependencies": {

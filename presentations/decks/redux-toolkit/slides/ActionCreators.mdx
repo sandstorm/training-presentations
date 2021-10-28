@@ -1,0 +1,27 @@
+import {
+CodeSurfer,
+CodeSurferColumns,
+Step,
+} from "code-surfer"
+
+import { Layout1 } from '../../../Components/Layout.jsx'
+
+<CodeSurfer>
+
+```tsx title="ActionCreators" subtitle="regular actionCreator"
+const ADD_TODO = 'ADD_TODO'
+
+function addTodo(text) {
+  return {
+    type: ADD_TODO,
+    payload: { text },
+  }
+}
+```
+
+```tsx title="ActionCreators" subtitle="createAction()"
+const addTodo = createAction('ADD_TODO')
+addTodo({ text: 'Do something' })
+```
+
+</CodeSurfer>
