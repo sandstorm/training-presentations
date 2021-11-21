@@ -24,5 +24,12 @@ export const baseTheme = {
     p: {
       margin: '0',
     },
+    code: {
+      color: 'darkmagenta',
+      background: 'blanchedalmond',
+      padding: '0.2em 0.3em',
+      borderRadius: '0.2em',
+      fontSize: '.9em',
+    }
   },
 }
