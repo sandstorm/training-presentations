@@ -1,0 +1,19 @@
+import { CodeSurfer, CodeSurferColumns } from 'code-surfer'
+
+<CodeSurfer>
+
+```tsx title="connect() function"
+// signature
+connect(mapStateToProps, mapDispatchToProps) => ConnectorHOC(Component) => ConnectedComponent
+
+// usage
+const Connector = connect(mapStateToProps, mapDispatchToProps)
+
+export default Connector(Component)
+
+// or sometimes
+
+export default connect(mapStateToProps, mapDispatchToProps)(Component)
+```
+
+</CodeSurfer>

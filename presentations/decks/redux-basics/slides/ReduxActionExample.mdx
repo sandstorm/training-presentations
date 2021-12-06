@@ -1,0 +1,31 @@
+import { CodeSurfer, CodeSurferColumns } from 'code-surfer'
+
+<CodeSurfer>
+
+```tsx title="Redux Action"
+const todoAddedAction = {
+  type: 'todos/todoAdded',
+  payload: {
+    todoText: 'Learn Redux',
+  },
+}
+
+store.dispatch(todoAddedAction)
+```
+
+```tsx title="Redux Action Creator"
+const createTodoAddedAction = (todoText) => ({
+  type: 'todos/todoAdded',
+  payload: {
+    todoText,
+  },
+})
+
+store.dispatch(createTodoAddedAction('Learn Redux'))
+```
+
+</CodeSurfer>
+
+<Notes>
+  - 2nd slide: Action Creator
+</Notes>

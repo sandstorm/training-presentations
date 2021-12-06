@@ -1,0 +1,25 @@
+### Redux Action
+
+<ul>
+
+<Appear>
+
+<li>Think: Event or intent</li>
+<li>Best Practice: Event (what happened, i.e. "User placed an order")</li>
+<li>Plain JS Object</li>
+<li>
+  with <code>type</code> and optional <code>payload</code>
+</li>
+
+</Appear>
+
+</ul>
+
+<Notes>
+  - Event is the best practise
+
+  - Exception: non-serializable values if action will be
+  intercepted and stopped by a middleware before it reaches
+  the reducers (e.g. redux-thunk)
+
+</Notes>

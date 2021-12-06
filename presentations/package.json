@@ -9,6 +9,8 @@
     "deck:react-basics": "mdx-deck decks/ReactBasics/deck.mdx",
     "deck:fcsAndHooks": "mdx-deck decks/functionalComponentsAndHooks/deck.mdx",
     "deck:routing": "mdx-deck decks/routing/deck.mdx",
+    "deck:redux-basics": "mdx-deck decks/redux-basics/deck.mdx",
+    "deck:redux-selectors": "mdx-deck decks/redux-selectors/deck.mdx",
     "deck:redux-toolkit": "mdx-deck decks/redux-toolkit/deck.mdx",
     "deck:async-redux": "mdx-deck decks/async-redux/deck.mdx",
     "deck:react-testing": "mdx-deck decks/react-testing/deck.mdx",

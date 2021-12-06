@@ -1,0 +1,75 @@
+import { CodeSurfer, CodeSurferColumns } from 'code-surfer'
+
+<CodeSurfer>
+
+```tsx title="Select computed/derived state"
+const myState = {
+    todo: {
+        allIds: ['uuid1', 'uuid2', 'uuid3'],
+        byId: {...}
+    }
+}
+
+const selectTodoCount = (state) => state.todo.allIds.length
+const selectCompletedTodos = (state) => state.todo.allIds.filter(id => state.todo.byId[id].completed)
+
+console.log(selectTodoCount(myState)) // 3
+
+console.log(selectTodoCount(myState) === selectTodoCount(myState)) // ?
+```
+
+```tsx title="Select computed/derived state"
+const myState = {
+    todo: {
+        allIds: ['uuid1', 'uuid2', 'uuid3'],
+        byId: {...}
+    }
+}
+
+const selectTodoCount = (state) => state.todo.allIds.length
+const selectCompletedTodos = (state) => state.todo.allIds.filter(id => state.todo.byId[id].completed)
+
+console.log(selectTodoCount(myState)) // 3
+
+console.log(selectTodoCount(myState) === selectTodoCount(myState)) // true
+```
+
+```tsx title="Select computed/derived state"
+const myState = {
+    todo: {
+        allIds: ['uuid1', 'uuid2', 'uuid3'],
+        byId: {...}
+    }
+}
+
+const selectTodoCount = (state) => state.todo.allIds.length
+const selectCompletedTodos = (state) => state.todo.allIds.filter(id => state.todo.byId[id].completed)
+
+console.log(selectTodoCount(myState)) // 3
+
+console.log(selectTodoCount(myState) === selectTodoCount(myState)) // true
+console.log(selectCompletedTodos(myState) === selectCompletedTodos(myState)) // ?
+```
+
+```tsx title="Select computed/derived state"
+const myState = {
+    todo: {
+        allIds: ['uuid1', 'uuid2', 'uuid3'],
+        byId: {...}
+    }
+}
+
+const selectTodoCount = (state) => state.todo.allIds.length
+const selectCompletedTodos = (state) => state.todo.allIds.filter(id => state.todo.byId[id].completed)
+
+console.log(selectTodoCount(myState)) // 3
+
+console.log(selectTodoCount(myState) === selectTodoCount(myState)) // true
+console.log(selectCompletedTodos(myState) === selectCompletedTodos(myState)) // false
+```
+
+</CodeSurfer>
+
+<Notes>
+
+</Notes>

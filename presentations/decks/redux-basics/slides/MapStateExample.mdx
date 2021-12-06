@@ -1,0 +1,20 @@
+import { CodeSurfer, CodeSurferColumns } from 'code-surfer'
+
+<CodeSurfer>
+
+```tsx title="MapStateToProps"
+const mapStateToProps = (state) => ({
+  isCollapsed: state.ui.sidebar.isCollapsed
+})
+
+// with ownProps
+const mapStateToProps = (state, ownProps) => ({
+  todo: state.data.todo.byId[ownProps.todoId]
+})
+```
+
+</CodeSurfer>
+
+<Notes>
+
+</Notes>

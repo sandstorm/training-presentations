@@ -1,0 +1,29 @@
+import { CodeSurfer, CodeSurferColumns } from 'code-surfer'
+
+<CodeSurfer>
+
+```tsx title="Reselect"
+import { createSelector } from '@reduxjs/toolkit'
+
+const selectTodos = (state) => state.data.todo.byId
+const selectTodoIds = (state) => state.data.todo.allIds
+// no need to memoize
+const selectTodoCount = (state) => selectTodoIds(state).length
+
+// memoized selector
+const selectCompletedTodoIds = createSelector(
+    // input selectors
+    [
+        selectTodoIds, // (state) => state.data.todo.allIds
+        selectTodos, // (state) => state.data.todo.byId
+    ],
+    // output selector
+    (todoIds, todos) => todoIds.filter(id => todos[id].isCompleted)
+)
+```
+
+</CodeSurfer>
+
+<Notes>
+
+</Notes>

@@ -1,0 +1,29 @@
+import { CodeSurfer, CodeSurferColumns } from 'code-surfer'
+
+<CodeSurfer>
+
+```tsx title="Selector Usage"
+import { selectTodosIds } from 'store/...'
+
+const mapStateToProps = (state) => ({
+    todoIds: state.todo.allIds,
+})
+
+...
+```
+
+```tsx title="Selector Usage"
+import { selectTodosIds } from 'store/...'
+
+const mapStateToProps = (state) => ({
+    todoIds: selectTodoIds(state),
+})
+
+...
+```
+
+</CodeSurfer>
+
+<Notes>
+
+</Notes>
