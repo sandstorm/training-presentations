@@ -24,4 +24,14 @@ const addTodo = createAction('ADD_TODO')
 addTodo({ text: 'Do something' })
 ```
 
+```tsx title="ActionCreators" subtitle="createAction() with prepare callback"
+const addTodo = createAction('ADD_TODO', (todo) => {
+  return {
+    payload: todo,
+    meta: 'someMetaInformation'
+  }
+})
+addTodo({ text: 'Do something', id: '1', title: 'some todo' })
+```
+
 </CodeSurfer>
