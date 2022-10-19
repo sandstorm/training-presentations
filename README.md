@@ -1,23 +1,19 @@
 > **Internal-Note**: Browser examples, exercises etc. can be found inside the `trainings` repo in our internal Gitlab!
 
 
-## Table of contents
+# Table of Contents
 
-<!-- vim-markdown-toc GFM -->
-
-- [Run + develop presentations](#run--develop-presentations)
-  - [Run a presentation](#run-a-presentation)
-    - [Shortcuts](#shortcuts)
-  - [Build a presentation](#build-a-presentation)
-- [Known Issues](#known-issues)
-  - [`WebpackError: ReferenceError: Prism is not defined`](#webpackerror-referenceerror-prism-is-not-defined)
-
-<!-- vim-markdown-toc -->
-
+- [Table of Contents](#table-of-contents)
+  - [Run + develop presentations](#run--develop-presentations)
+    - [Run a presentation](#run-a-presentation)
+    - [Build a presentation](#build-a-presentation)
+    - [Project structure](#project-structure)
+    - [Styling](#styling)
+      - [Example custom styling on single slide](#example-custom-styling-on-single-slide)
 
 ## Run + develop presentations
 
-All presentations inside the `presentations` directory have been built with [mdx-deck](https://github.com/jxnblk/mdx-deck) and [CodeSurfer](https://github.com/pomber/code-surfer).
+All presentations inside the `presentations` directory have been built with [slidev](https://sli.dev)
 
 The whole presentation has been split into sub-presentations so that it becomes easier to skip/add
 parts of the presentation depending on the requirements of the specific training and customer needs.
@@ -30,10 +26,6 @@ parts of the presentation depending on the requirements of the specific training
 4. Run `yarn run` to list all available `run deck:<deckName>` commands (or have a look inside the `package.json`)
 5. Pick the presentation deck you want to run by invoking `yarn run deck:<deckName>`
 
-#### Shortcuts
-
-- `alt + o` - overview mode
-- `alt + p` - presenter mode
 
 ### Build a presentation
 
@@ -46,22 +38,38 @@ To build a presentation follow these steps:
 To get an idea of how to best build a presentation please refer to the mdx-deck-/codeSurfer-docs
 and have a look inside our already existing presentations.
 
-## Known Issues
 
-- Because this project was scaffolded with CodeSurfer we are currently running an older version of mdx-deck which might lack some features of **v4.x.x+**
-- Whenever you want to add a new `import` (e.g. an image, a slide or a react-component) you currently have to restart the development-server (hot-reloading is unfortunately broken inside the mdx-deck version we have to use)
-- We currently cannot upgrade mdx-deck, as slide import seems to be broken in **v4.x.x+** and CodeSurfer also does not seem to support **v4**, yet
-- **Can't we use another library?** - I did extensive testing of various libraries and at the time of writing this **README** I didn't find any library that met our requirements and also wasn't completely broken and well maintained. Libraries that have also been taken into consideration:
-  - spectacle
-  - reveal.js
-  - marp
-  - deckdeckgo
-  - react-presents
-  - remark
-  - fusuma
+### Project structure
 
-### `WebpackError: ReferenceError: Prism is not defined`
+* Each deck has an entrypoint md-file lying inside the root of the `presentations/`-directory
+* Each decks respective slides can then be found inside the corresponding directory of the `decks/`-directory
+* Images/Assets can be put into `images/` and there path is always relative to the `presentations/`-root, even if it is being referenced by a slide somewhere inside `decks/**/*`
 
-If you get this error you probably have this import `import "prismjs/components/prism-tsx"` somewhere inside your deck,
-without a slide using CodeSurfer.
-Make sure to only include prism into a deck if you have at least one slide containing a code example.
+### Styling
+
+Currently we do not apply any global styling and deck formatting.
+Each deck hast its own frontmatter (simply copy it from another entrypoint file, when you create a new presentation).
+You may use `<style></style>` tags either inside the entrypoint file (for styles that should be used multiple times througout the deck) or locally inside a slides Markdown file.
+
+> NOTE: No matter where you put the `style`-tag, the changes will apply to **ALL** slides inside that deck.
+> Therefore you should not use generic selectors like `img` or `h1` inside any markdown files other than the entrypoint of the deck. If you use `style` tags inside a slide file, make sure to use specific selectors like classes and use **HTML** to apply them inside the respective slide
+
+#### Example custom styling on single slide
+
+```md
+<style>
+.my-special-list {
+  background: green;
+}
+</style>
+
+# Example slide with custom styling
+
+<div class="my-special-list">
+
+* item a
+* item b
+* item c
+
+</div>
+```

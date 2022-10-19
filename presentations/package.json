@@ -2,29 +2,27 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "deck:start": "mdx-deck decks/start/deck.mdx",
-    "deck:functional": "mdx-deck decks/functionalProgramming/deck.mdx",
-    "deck:js-primer": "mdx-deck decks/JS-Language-Primer/deck.mdx",
-    "deck:ts-primer": "mdx-deck decks/TS-Language-Primer/deck.mdx",
-    "deck:react-basics": "mdx-deck decks/ReactBasics/deck.mdx",
-    "deck:fcsAndHooks": "mdx-deck decks/functionalComponentsAndHooks/deck.mdx",
-    "deck:routing": "mdx-deck decks/routing/deck.mdx",
-    "deck:agenda-redux": "mdx-deck decks/agendaRedux/deck.mdx",
-    "deck:redux-basics": "mdx-deck decks/redux-basics/deck.mdx",
-    "deck:redux-selectors": "mdx-deck decks/redux-selectors/deck.mdx",
-    "deck:redux-toolkit": "mdx-deck decks/redux-toolkit/deck.mdx",
-    "deck:async-redux": "mdx-deck decks/async-redux/deck.mdx",
-    "deck:react-testing": "mdx-deck decks/react-testing/deck.mdx",
+    "deck:start": "slidev start.md",
+    "deck:react-agenda": "slidev reactAgenda.md",
+    "deck:functional": "slidev functionalProgramming.md",
+    "deck:js-primer": "slidev jsLanguagePrimer.md",
+    "deck:ts-primer": "slidev tsLanguagePrimer.md",
+    "deck:react-basics": "slidev reactBasics.md",
+    "deck:fcsAndHooks": "slidev functionalComponentsAndHooks.md",
+    "deck:routing": "slidev routing.md",
+    "deck:agenda-redux": "slidev agendaRedux.md",
+    "deck:redux-basics": "slidev redux-basics.md",
+    "deck:redux-selectors": "slidev redux-selectors.md",
+    "deck:redux-toolkit": "slidev redux-toolkit.md",
+    "deck:async-redux": "slidev async-redux.md",
+    "deck:react-testing": "slidev react-testing.md",
     "build": "echo \"TODO: create build with all decks\""
   },
-  "devDependencies": {
-    "code-surfer": "3.1.0",
-    "mdx-deck": "3.0.13"
-  },
+  "devDependencies": {},
   "name": "deck",
   "dependencies": {
-    "@code-surfer/themes": "^3.1.1",
-    "mdx-code": "^2.0.0",
-    "styled-components": "^5.2.0"
+    "@slidev/cli": "^0.36.7",
+    "@slidev/theme-default": "^0.21.2",
+    "slidev-theme-light-icons": "^1.0.2"
   }
 }
