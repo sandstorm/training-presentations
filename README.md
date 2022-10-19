@@ -45,6 +45,9 @@ and have a look inside our already existing presentations.
 * Each decks respective slides can then be found inside the corresponding directory of the `decks/`-directory
 * Images/Assets can be put into `images/` and there path is always relative to the `presentations/`-root, even if it is being referenced by a slide somewhere inside `decks/**/*`
 
+> NOTE: It is currently mandatory to have the entrypoints inside the directory root for **slidev** to work properly.
+> This is why we can't move these deck files into each decks subdirectory!
+
 ### Styling
 
 Currently we do not apply any global styling and deck formatting.
