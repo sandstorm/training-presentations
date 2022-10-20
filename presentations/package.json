@@ -2,6 +2,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
+    "slidev": "slidev",
     "deck:start": "slidev start.md",
     "deck:react-agenda": "slidev reactAgenda.md",
     "deck:functional": "slidev functionalProgramming.md",
@@ -18,7 +19,9 @@
     "deck:react-testing": "slidev react-testing.md",
     "build": "echo \"TODO: create build with all decks\""
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "playwright-chromium": "^1.27.1"
+  },
   "name": "deck",
   "dependencies": {
     "@slidev/cli": "^0.36.7",
