@@ -5,7 +5,7 @@
 ## Old way of savely traversing objects
 
 ```tsx {all|4}
-const user : {}
+const user = {}
 let street = undefined
 
 if (user && user.address && user.address.street) {
