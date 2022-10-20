@@ -64,6 +64,7 @@ drawings:
 
 
 # First slide
+layout: cover
 src: ./decks/ReactBasics/slides/ReactBasics.md
 ---
 
@@ -77,10 +78,6 @@ src: ./decks/ReactBasics/slides/JSX.md
 
 ---
 src: ./decks/ReactBasics/slides/JSX2.md
----
-
----
-src: ./decks/ReactBasics/slides/ReactWithoutJsx.md
 ---
 
 ---
