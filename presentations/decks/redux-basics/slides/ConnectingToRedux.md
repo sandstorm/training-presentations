@@ -7,6 +7,8 @@
   1. use the provided `useSelector()` and `useDispatch()` hooks
   2. use the `connect()`-Higher order component
 * The recommended approach is **1.** these days
+* Does not work with class components, however
+* Both styles can be mixed inside a project, if necessary (but stick to one if possible)
 
 </v-clicks>
 
