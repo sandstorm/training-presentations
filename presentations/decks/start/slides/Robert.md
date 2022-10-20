@@ -5,7 +5,8 @@ Robert Baruck | <em>@jamesAlias</em>
 
 - Dad of 2
 - Typescript
-- React & Redux
+- Really like React & Redux
+- Frontend, Backend, DevOps
 - Never stop learning
 - Drums
 - Open Source & Open Web

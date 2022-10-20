@@ -3,11 +3,13 @@ Theo Salzmann | <em>@on3iro</em>
 
 <v-clicks>
 
-- Guitar
+- Father
 - Typescript
-- React & Redux
-- Functional Programming
+- Also really likes React & Redux
+- Practical Functional Programming enthusiast
+- Frontend, Backend, DevOps
 - Boardgames
+- Guitar
 - Open Source
 
 </v-clicks>
