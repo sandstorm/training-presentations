@@ -81,6 +81,10 @@ src: ./decks/JS-Language-Primer/slides/VarLetConst.md
 ---
 
 ---
+src: ./decks/JS-Language-Primer/slides/VarLetConst2.md
+---
+
+---
 src: ./decks/JS-Language-Primer/slides/EqualityInJS.md
 ---
 

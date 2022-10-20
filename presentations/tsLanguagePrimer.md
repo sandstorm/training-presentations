@@ -69,6 +69,11 @@ layout: cover
 
 # TypeScript
 
+<!--
+NOTE: Feel free to skip parts of this presentation, as it can be rather long winded and
+it is usually easier to learn TS by "doing"
+-->
+
 ---
 src: ./decks/TS-Language-Primer/slides/Typescript.md
 ---
