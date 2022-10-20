@@ -172,6 +172,18 @@ src: ./decks/redux-basics/slides/ConnectingToRedux.md
 ---
 
 ---
+src: ./decks/redux-basics/slides/ReactReduxTypescriptPrep.md
+---
+
+---
+src: ./decks/redux-basics/slides/UseSelector.md
+---
+
+---
+src: ./decks/redux-basics/slides/UseDispatch.md
+---
+
+---
 src: ./decks/redux-basics/slides/ConnectFunction.md
 ---
 
