@@ -13,6 +13,7 @@
 const Header = (props) => {
   return (
     <div className='header'>
+      {/* This is a comment inside JSX */}
       <Logo />
       <Navigation />
     </div>
