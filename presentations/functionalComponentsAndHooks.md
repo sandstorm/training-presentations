@@ -85,6 +85,16 @@ src: ./decks/functionalComponentsAndHooks/slides/ChildrenAsProps.md
 ---
 
 ---
+layout: cover
+---
+
+# Hands On
+
+<!--
+Aufgaben 1 + 2
+-->
+
+---
 src: ./decks/functionalComponentsAndHooks/slides/ReactMemo.md
 ---
 
@@ -103,6 +113,16 @@ src: ./decks/functionalComponentsAndHooks/slides/UseState.md
 ---
 src: ./decks/functionalComponentsAndHooks/slides/UseStateExample.md
 ---
+
+---
+layout: cover
+---
+
+# Hands On
+
+<!--
+Aufgabe 3
+-->
 
 ---
 src: ./decks/functionalComponentsAndHooks/slides/UseEffect.md
@@ -137,8 +157,28 @@ src: ./decks/functionalComponentsAndHooks/slides/CustomHooks2.md
 ---
 
 ---
+layout: cover
+---
+
+# Hands On
+
+<!--
+Aufgaben 4 + 5
+-->
+
+---
 src: ./decks/functionalComponentsAndHooks/slides/ControlledInputs.md
 ---
+
+---
+layout: cover
+---
+
+# Hands On
+
+<!--
+Aufgabe 6
+-->
 
 ---
 src: ./decks/functionalComponentsAndHooks/slides/UseReducer.md
@@ -147,3 +187,13 @@ src: ./decks/functionalComponentsAndHooks/slides/UseReducer.md
 ---
 src: ./decks/functionalComponentsAndHooks/slides/UseReducerExample.md
 ---
+
+---
+layout: cover
+---
+
+# Hands On
+
+<!--
+Aufgabe 7
+-->

@@ -9,3 +9,7 @@
 * Enables performance optimisations by having a single dispatch function with stable identity
 
 </v-clicks>
+
+<!--
+Only do this part, if there is enough time, otherwise skip useReducer()
+-->
