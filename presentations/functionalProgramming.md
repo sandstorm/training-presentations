@@ -12,7 +12,7 @@ info: false
 # enabled pdf downloading in SPA build, can also be a custom url
 download: false
 # filename of the export file
-exportFilename: 'functiona-programming-exported'
+exportFilename: 'functional-programming-exported'
 # syntax highlighter, can be 'prism' or 'shiki'
 highlighter: 'prism'
 # show line numbers in code blocks
@@ -64,6 +64,12 @@ drawings:
 
 
 # First slide
+layout: cover
+---
+
+# Functional Programing Basics
+
+---
 src: ./decks/functionalProgramming/slides/FPBasicsOverview.md
 ---
 
