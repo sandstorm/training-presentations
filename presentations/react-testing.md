@@ -91,18 +91,35 @@ src: ./decks/react-testing/slides/GoldenRules.md
 
 
 ---
-src: ./decks/react-testing/slides/Jest.md
+src: ./decks/react-testing/slides/Vitest.md
 ---
 
 
 ---
-src: ./decks/react-testing/slides/Jest2.md
+src: ./decks/react-testing/slides/Vitest2.md
 ---
 
 
 ---
 src: ./decks/react-testing/slides/UnitTests.md
 ---
+
+---
+layout: cover
+---
+
+# Hands On
+
+<!--
+NOTE: If participants have checked out our training repo, there is no need to install
+packages - everything has already been setup!
+
+> Show existing tests in hands on repoistory, before doing the exercises!
+
+* 0
+* 1
+* 2
+-->
 
 
 ---
@@ -119,6 +136,21 @@ src: ./decks/react-testing/slides/Mocking.md
 src: ./decks/react-testing/slides/Mocking2.md
 ---
 
+---
+layout: cover
+---
+
+# Hands On
+
+<!--
+NOTE: If participants have checked out our training repo, there is no need to install
+packages - everything has already been setup!
+
+> Show existing tests in hands on repoistory, before doing the exercises!
+
+* 3
+* 4
+-->
 
 ---
 src: ./decks/react-testing/slides/Cypress.md
@@ -134,6 +166,20 @@ src: ./decks/react-testing/slides/Cypress2.md
 src: ./decks/react-testing/slides/Cypress3.md
 ---
 
+---
+layout: cover
+---
+
+# Hands On
+
+<!--
+NOTE: If participants have checked out our training repo, there is no need to install
+packages - everything has already been setup!
+
+> Show existing tests in hands on repoistory, before doing the exercises!
+
+* 5
+-->
 
 ---
 src: ./decks/react-testing/slides/TDD.md

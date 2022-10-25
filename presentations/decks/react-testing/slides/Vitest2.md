@@ -1,4 +1,4 @@
-# Typical jest test suite
+# Typical vitest test suite
 
 ```ts {all|1-2|4-9|10-13|15-18|20-23|25-28|30-37|32-33|35-36|39-50|50-66} {maxHeight: '100'}
 // NOTE: "describe", "it", "test", "expect" are all globals exposed by Jest!

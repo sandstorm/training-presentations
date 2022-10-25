@@ -1,7 +1,8 @@
-# Jest
+# vitest
 
 
-Very well configured test framework which comes with Create-React-App by default
+> Very well configured test framework.
+> Basically provides the same API-surface as Jest
 
 <v-click>
 
@@ -25,6 +26,7 @@ Alternatives are e.g.
 
 <v-clicks>
 
+* **Jest**
 * <strong>Mocha</strong> (testrunner)
 * <strong>Chai</strong> (assertion library)
 * <strong>Istanbul</strong> (code coverage tool)
@@ -33,5 +35,5 @@ Alternatives are e.g.
 
 <!--
 - Explain a bit what each of these are!
-- Show Jest docs
+- Show [vitest docs](https://vitest.dev/)
 -->

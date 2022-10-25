@@ -1,4 +1,4 @@
-# Mock function from Jest
+# Mock function from vitest
 
 ```ts {all|1-2|4-5|7-14|16-33|20-22|24-27|28-31} {maxHeight: '100'}
 // 'getRandomListElement.ts'
@@ -22,7 +22,7 @@ describe('getRandomListElement', () => {
   it('should call numberGenerator and return list item', () => {
     // Create a deterministic mock implementation of the NumberGenerator type
     // which always returns the min value
-    const mockNumbeGenerator = jest.fn((min, max) => min)
+    const mockNumbeGenerator = vi.fn((min, max) => min)
 
     const result = getRandomListElement(
       mockNumbeGenerator,
