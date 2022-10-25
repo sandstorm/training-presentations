@@ -25,8 +25,8 @@ Benefits:
 
 ::right::
 
-<img src="/images/babel-883.png" />
+<img src="/babel-883.png" />
 
 <br>
 
-<img src="/images/ts-2126.png" class="ts-image"/>
+<img src="/ts-2126.png" class="ts-image"/>

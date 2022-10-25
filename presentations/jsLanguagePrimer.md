@@ -3,9 +3,9 @@
 # Learn more: https://sli.dev/themes/use.html
 theme: 'default'
 # title of your slide, will auto infer from the first header if not specified
-title: 'Functional Programming'
+title: 'JS Primer'
 # titleTemplate for the webpage, `%s` will be replaced by the page's title
-titleTemplate: '%s - Slidev'
+titleTemplate: '%s'
 # information for your slides, can be a markdown string
 info: false
 

@@ -12,6 +12,6 @@ layout: center
 }
 </style>
 
-<img class="async-diagram" src="images/reduxasyncdataflowdiagram-d97ff38a0f4da0f327163170ccc13e80.gif" />
+<img class="async-diagram" src="/reduxasyncdataflowdiagram-d97ff38a0f4da0f327163170ccc13e80.gif" />
 
 > Source: https://redux.js.org/tutorials/fundamentals/part-6-async-logic

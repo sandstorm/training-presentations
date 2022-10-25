@@ -14,7 +14,7 @@ img {
 
 <br>
 
-<img src="/images/ts-2126.png">
+<img src="/ts-2126.png">
 
 <!--
 Show Typescript docs!

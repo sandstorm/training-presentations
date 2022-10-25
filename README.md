@@ -6,6 +6,7 @@
 - [Table of Contents](#table-of-contents)
   - [Run + develop presentations](#run--develop-presentations)
     - [Run a presentation](#run-a-presentation)
+      - [Presenter mode](#presenter-mode)
     - [Build a presentation](#build-a-presentation)
     - [Project structure](#project-structure)
     - [Styling](#styling)
@@ -26,24 +27,29 @@ parts of the presentation depending on the requirements of the specific training
 4. Run `yarn run` to list all available `run deck:<deckName>` commands (or have a look inside the `package.json`)
 5. Pick the presentation deck you want to run by invoking `yarn run deck:<deckName>`
 
+#### Presenter mode
+Slidev already gives you multiple options on how to start the presenter mode.
+
+> NOTE: In chrome sometimes the presenter mode might not work properly. Its really easy to spot
+> if something broke:
+> 1. if the browser address input changes to a regular "non-presenter" url as soon as you step forward
+> 2. if the presenter icon inside the toolbar is still visible instead of the "play mode" icon
+> To fix this, reload the page without cache (**cmd + shift + r**)
 
 ### Build a presentation
 
 To build a presentation follow these steps:
 
 1. create a new directory inside the `presentations/decks/` directory
-2. create a `slides/` and a `deck.mdx` file inside the newly created directory
+2. create an entrypoint markdown file inside the `presentations/`-directory
 3. add a new `run deck:<deckname>` npm script to the `package.json`
-
-To get an idea of how to best build a presentation please refer to the mdx-deck-/codeSurfer-docs
-and have a look inside our already existing presentations.
-
+4. Copy and edit the fontmatter (*title*, *settings*, etc.) from one of the other entrypoint files
 
 ### Project structure
 
 * Each deck has an entrypoint md-file lying inside the root of the `presentations/`-directory
 * Each decks respective slides can then be found inside the corresponding directory of the `decks/`-directory
-* Images/Assets can be put into `images/` and there path is always relative to the `presentations/`-root, even if it is being referenced by a slide somewhere inside `decks/**/*`
+* Images/Assets can be put into `public/` and then be reference by `/<asset-path>`
 
 > NOTE: It is currently mandatory to have the entrypoints inside the directory root for **slidev** to work properly.
 > This is why we can't move these deck files into each decks subdirectory!

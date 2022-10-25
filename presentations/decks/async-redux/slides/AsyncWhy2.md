@@ -1,6 +1,6 @@
 # Handling async code in React
 
-```tsx {all|20-13|15|17-25|36-|52-55} {maxHeight: '100'}
+```tsx {all|10-13|15|17-25|36-|52-55} {maxHeight: '100'}
 // Fetch handling inside component
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'

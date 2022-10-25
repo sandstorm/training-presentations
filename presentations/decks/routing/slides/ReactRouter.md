@@ -9,7 +9,7 @@ img {
 }
 </style>
 
-<img src="images/react-router-logo.png" />
+<img src="/react-router-logo.png" />
 
 <v-clicks>
 

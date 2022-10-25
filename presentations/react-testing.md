@@ -3,16 +3,16 @@
 # Learn more: https://sli.dev/themes/use.html
 theme: 'default'
 # title of your slide, will auto infer from the first header if not specified
-title: 'Functional Programming'
+title: 'React Testing'
 # titleTemplate for the webpage, `%s` will be replaced by the page's title
-titleTemplate: '%s - Slidev'
+titleTemplate: '%s'
 # information for your slides, can be a markdown string
 info: false
 
 # enabled pdf downloading in SPA build, can also be a custom url
 download: false
 # filename of the export file
-exportFilename: 'functiona-programming-exported'
+exportFilename: 'react-testing.pdf'
 # syntax highlighter, can be 'prism' or 'shiki'
 highlighter: 'prism'
 # show line numbers in code blocks

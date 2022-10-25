@@ -13,7 +13,7 @@ layout: center
 
 # Testing Trophy
 
-<img class="trophy" src="images/testing-trophy-with-labels.png" />
+<img class="trophy" src="/testing-trophy-with-labels.png" />
 
 <p style="font-size: 17px; margin-top: 20px; text-align: left; width: 50%">
   <i>Source: Kent C. Dodds, https://testingjavascript.com/</i>

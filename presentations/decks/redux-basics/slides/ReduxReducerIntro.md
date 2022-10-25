@@ -1,3 +1,3 @@
 # Redux Reducer
 
-<img class="diagram" src="images/redux-flux-reducer.drawio.svg" />
+<img class="diagram" src="/redux-flux-reducer.drawio.svg" />

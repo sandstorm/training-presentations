@@ -4,7 +4,7 @@ layout: center
 
 # Redux Architecture
 
-<img class="diagram" src="images/redux-flux.drawio.svg" />
+<img class="diagram" src="/redux-flux.drawio.svg" />
 
 <!--
   - we will go over the details in the coming slides
