@@ -79,11 +79,17 @@ image: /Robert.jpg
 src: ./decks/start/slides/Robert.md
 ---
 
+[comment]: <> (---)
+[comment]: <> (layout: image-right)
+[comment]: <> (image: /Theo.jpg)
+[comment]: <> (src: ./decks/start/slides/Theo.md)
+[comment]: <> (---)
+
 ---
 layout: image-right
 
-image: /Theo.jpg
-src: ./decks/start/slides/Theo.md
+image: /Martin.webp
+src: ./decks/start/slides/Martin.md
 ---
 
 ---
