@@ -75,7 +75,7 @@ src: ./decks/start/slides/Sandstorm.md
 ---
 layout: image-left
 
-image: /Robert.jpg
+image: /Robert.jpeg
 src: ./decks/start/slides/Robert.md
 ---
 
