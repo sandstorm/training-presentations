@@ -8,7 +8,7 @@
 * a library for view rendering
 * was open-sourced by Facebook in 2013
 * has a small API
-* is easy reason about due to it's "one way" data flow
+* is easy to reason about due to it's "one way" data flow
 * efficiently updates and renders the view once data changes
 * has bindings for the Browser, static HTML and Native
 * has a huge community & rich ecosystem

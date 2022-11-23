@@ -2,7 +2,7 @@
 
 <v-clicks>
 
-* JS-functions which accpet props as arguments and return JSX
+* JS-functions which accept props as arguments and return JSX
 * Return is equivalent to `render()` method in classes
 
 </v-clicks>

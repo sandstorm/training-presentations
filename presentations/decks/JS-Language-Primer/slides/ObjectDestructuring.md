@@ -11,12 +11,12 @@ const obj = {
     },
 }
 
-const {a, d} = obj
+const {a, hero} = obj
 console.log(a === obj.a) // ?
-console.log(d === obj.d) // ?
+console.log(hero === obj.hero) // ?
 
 // get the "rest" of the object as shallow copy
-const {b, d, ...rest} = obj
+const {b, hero, ...rest} = obj
 console.log(b) // => 2
 console.log(rest) // => {a: 1, c: 3}
 ```
