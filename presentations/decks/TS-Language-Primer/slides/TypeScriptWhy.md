@@ -6,8 +6,8 @@
 <v-clicks>
 
 * describe the shape of your data and transformation
-* provide better documentatio
-* lower cognitive overhead significantl
-* write code with more confidenc
+* provide better documentation
+* lower cognitive overhead significant
+* write code with more confidence
 
 </v-clicks>

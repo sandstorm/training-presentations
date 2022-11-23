@@ -1,6 +1,7 @@
 dist
 node_modules
 .vscode
+.idea
 
 # OSX
 .DS_Store

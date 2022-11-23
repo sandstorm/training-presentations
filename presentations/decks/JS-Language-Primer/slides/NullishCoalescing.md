@@ -2,7 +2,7 @@
 
 <v-clicks>
 
-* Similar but safer as || operator
+* Similar but safer than || operator
 
 ```tsx {all|4-5|7-8|10-12}
 const _this = undefined

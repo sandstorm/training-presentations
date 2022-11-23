@@ -11,7 +11,7 @@ import React from 'react'
 
 const Article = () => (
     <article className="article">
-        <h2> className="title">Title</h2>
+        <h2 className="title">Title</h2>
         <p className="text">Text</p>
     </article>
 )
