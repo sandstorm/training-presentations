@@ -100,22 +100,6 @@ src: ./decks/redux-basics/slides/Flux.md
 ---
 
 ---
-src: ./decks/redux-basics/slides/FPRecap.md
----
-
----
-src: ./decks/redux-basics/slides/FPRecapData.md
----
-
----
-src: ./decks/redux-basics/slides/FPRecapCalculations.md
----
-
----
-src: ./decks/redux-basics/slides/FPRecapActions.md
----
-
----
 src: ./decks/redux-basics/slides/CorePrinciples.md
 ---
 

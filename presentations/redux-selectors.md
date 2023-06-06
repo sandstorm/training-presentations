@@ -94,10 +94,6 @@ src: ./decks/redux-selectors/slides/ReselectExample.md
 ---
 
 ---
-src: ./decks/redux-selectors/slides/ReselectFactoryExample.md
----
-
----
 layout: center
 ---
 

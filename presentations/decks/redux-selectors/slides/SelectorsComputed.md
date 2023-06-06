@@ -19,5 +19,6 @@ console.log(selectCompletedTodos(myState) === selectCompletedTodos(myState)) // 
 
 <!--
 * true
-* false
+* false -> what does that mean for our component?
+    * when selector is run twice _with the same state_ it will compute again _and_ get a new reference
 -->
