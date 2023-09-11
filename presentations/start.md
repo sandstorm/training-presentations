@@ -85,12 +85,12 @@ src: ./decks/start/slides/Robert.md
 [comment]: <> (src: ./decks/start/slides/Theo.md)
 [comment]: <> (---)
 
----
+<!-- ---
 layout: image-right
 
 image: /Martin.webp
 src: ./decks/start/slides/Martin.md
----
+--- -->
 
 ---
 src: ./decks/start/slides/RemoteRules.md

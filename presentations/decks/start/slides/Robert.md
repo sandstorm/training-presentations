@@ -3,12 +3,10 @@ Robert Baruck | <em>@jamesAlias</em>
 
 <v-clicks>
 
-- Dad of 2
-- Typescript
-- Really like React & Redux
-- Frontend, Backend, DevOps
+- Typescript, React & Redux since es6
 - Never stop learning
-- Drums
-- Open Source & Open Web
+- Dad of 2
+- Drums @ Road to You
+- Open [Source, Web, Data, Society]
 
 </v-clicks>

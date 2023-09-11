@@ -17,3 +17,7 @@ url: https://sandstorm.de
     https://sandstorm.de
   </a>
 </p>
+
+- Agentur (Web, App, Consulting, Workshops)
+- Exply (BI Tool)
+- Sandstorm Maps (direkt DSGVO-konform)
